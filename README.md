@@ -1,6 +1,6 @@
-# Mono
+# repo2mono
 
-Mono is a Python package that generates a single Markdown file containing the codebase architecture and file contents of a given directory.
+repo2mono is a Python package that generates a single Markdown file containing the codebase architecture and file contents of a given directory.
 
 ## Features
 
@@ -11,18 +11,18 @@ Mono is a Python package that generates a single Markdown file containing the co
 
 ## Installation
 
-You can install Mono using pip:
+You can install repo2mono using pip:
 
 ```
-pip install mono
+pip install repo2mono
 ```
 
 ## Usage
 
-To use Mono, run the following command in your terminal:
+To use repo2mono, run the following command in your terminal:
 
 ```
-mono [OPTIONS] [CODEBASE_PATH]
+repo2mono [OPTIONS] [CODEBASE_PATH]
 ```
 
 ### Options
@@ -38,7 +38,7 @@ mono [OPTIONS] [CODEBASE_PATH]
 To generate a Markdown file for a codebase in the `my_project` directory, including only `.py` and `.md` files, and save it as `output.md`, run:
 
 ```
-mono my_project -e .py -e .md -o output.md
+repo2mono my_project -e .py -e .md -o output.md
 ```
 
 ## Codebase Architecture
@@ -46,17 +46,17 @@ mono my_project -e .py -e .md -o output.md
 The package consists of the following files:
 
 ```
-mono
-├── mono.py
+repo2mono
+├── repo2mono.py
 ├── cli.py
 ```
 
-- `mono.py`: Contains the core functionality for generating the Markdown file
+- `repo2mono.py`: Contains the core functionality for generating the Markdown file
 - `cli.py`: Provides the command-line interface for the package
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/mono).
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/repo2mono).
 
 ## License
 

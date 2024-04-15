@@ -1,16 +1,16 @@
 ## Codebase Architecture
 
 ```
-mono
-├── mono.py
+repo2mono
+├── repo2mono.py
 ├── cli.py
 ```
 
-## File: mono.py
-### Path: <a id='monomonopy'></a>mono/mono.py
+## File: repo2mono.py
+### Path: <a id='repo2monorepo2monopy'></a>repo2mono/repo2mono.py
 
 ```python
-# mono/mono.py
+# repo2mono/repo2mono.py
 import os
 import re
 
@@ -65,25 +65,25 @@ def generate_tree(directory, level=0, indent_size=4):
 ```
 
 ## File: __init__.py
-### Path: <a id='mono__init__py'></a>mono/__init__.py
+### Path: <a id='repo2mono__init__py'></a>repo2mono/__init__.py
 
 ```python
-# mono/__init__.py
-from .mono import create_markdown_file, generate_tree
+# repo2mono/__init__.py
+from .repo2mono import create_markdown_file, generate_tree
 
 __all__ = ["create_markdown_file", "generate_tree"]
 
 ```
 
 ## File: cli.py
-### Path: <a id='monoclipy'></a>mono/cli.py
+### Path: <a id='repo2monoclipy'></a>repo2mono/cli.py
 
 ```python
 import os
 import click
-from mono import create_markdown_file, generate_tree
+from repo2mono import create_markdown_file, generate_tree
 
-# mono/cli.py
+# repo2mono/cli.py
 
 
 @click.command()

@@ -1,8 +1,8 @@
 import os
 import click
-from mono import create_markdown_file, generate_tree
+from repo2mono import create_markdown_file, generate_tree
 
-# mono/cli.py
+# repo2mono/cli.py
 
 
 @click.command()
