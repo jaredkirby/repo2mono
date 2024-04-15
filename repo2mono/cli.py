@@ -21,8 +21,8 @@ from repo2mono import create_markdown_file, generate_tree
 @click.option(
     "--output",
     "-o",
-    default="code_output.md",
-    help="Output markdown file path (default: code_output.md)",
+    default="mono_output.md",
+    help="Output markdown file path (default: mono_output.md)",
 )
 @click.option(
     "--toc",
