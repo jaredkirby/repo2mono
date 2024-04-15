@@ -15,7 +15,7 @@ click = "^8.0"
 pytest = "^7.0"
 
 [tool.poetry.scripts]
-repo2mono = "repo2mono.cli:main"
+repo2mono = "src.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
