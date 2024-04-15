@@ -1,74 +1,63 @@
-# Code2MD
+# Mono
 
-Code2MD is a command-line tool that generates a markdown file from a Python codebase. It creates a well-structured markdown file that includes the codebase architecture, file paths, and the contents of each Python file.
+Mono is a Python package that generates a single Markdown file containing the codebase architecture and file contents of a given directory.
 
 ## Features
 
-- Generates a markdown file from a Python codebase
-- Includes the codebase architecture as a tree structure
-- Provides file paths and contents of each Python file
-- Supports optional table of contents for easy navigation
-- Customizable file extensions to include in the generated markdown
+- Generates a Markdown file with the codebase architecture and file contents
+- Supports custom file extensions to include in the output
+- Optionally includes a table of contents in the generated Markdown
+- Prints the generated Markdown to the console if desired
 
 ## Installation
 
-To install Code2MD, follow these steps:
+You can install Mono using pip:
 
-1. Clone the repository:
-   ```
-   git clone https://github.com/your-username/code2md.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd code2md
-   ```
-
-3. Install the required dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
+```
+pip install mono
+```
 
 ## Usage
 
-To generate a markdown file from your Python codebase, use the following command:
+To use Mono, run the following command in your terminal:
 
 ```
-python -m code2md.cli [OPTIONS] [CODEBASE_PATH]
+mono [OPTIONS] [CODEBASE_PATH]
 ```
 
-Options:
-- `--extensions` or `-e`: File extensions to include (default: .py)
-- `--output` or `-o`: Output markdown file path (default: output.md)
-- `--toc`: Include a table of contents in the generated markdown
+### Options
 
-Example:
-```
-python -m code2md.cli -e .py -e .js -o docs/codebase.md /path/to/codebase
-```
+- `CODEBASE_PATH`: The path to the codebase directory (default: current directory)
+- `-e, --extensions`: File extensions to include (default: .py, .toml, .md)
+- `-o, --output`: Output Markdown file path (default: code_output.md)
+- `--toc`: Include a table of contents in the generated Markdown
+- `-p, --print`: Print the generated Markdown to the console
 
-## Project Structure
+### Example
+
+To generate a Markdown file for a codebase in the `my_project` directory, including only `.py` and `.md` files, and save it as `output.md`, run:
 
 ```
-code2md/
-├── __init__.py
-├── code2md.py
-└── cli.py
+mono my_project -e .py -e .md -o output.md
 ```
 
-- `__init__.py`: Initializes the `code2md` package and exposes the public functions.
-- `code2md.py`: Contains the core functionality for generating the markdown file.
-- `cli.py`: Provides the command-line interface for running Code2MD.
+## Codebase Architecture
+
+The package consists of the following files:
+
+```
+mono
+├── mono.py
+├── cli.py
+```
+
+- `mono.py`: Contains the core functionality for generating the Markdown file
+- `cli.py`: Provides the command-line interface for the package
 
 ## Contributing
 
-Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+Contributions are welcome! If you find any issues or have suggestions for improvements, please open an issue or submit a pull request on the [GitHub repository](https://github.com/yourusername/mono).
 
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
-
-## Acknowledgements
-
-- The project uses the [Click](https://click.palletsprojects.com/) library for building the command-line interface.
-- The markdown file generation is inspired by the need for better code documentation.
