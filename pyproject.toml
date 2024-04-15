@@ -1,17 +1,21 @@
 [tool.poetry]
 name = "code2md"
 version = "0.1.0"
-description = "Codebase to Markdown with file tree."
-authors = ["jaredkirby <jpeterkirby@gmail.com>"]
-license = "MIT"
-readme = "README.md"
+description = "Codebase to single Markdown string with file tree."
+authors = ["Your Name <your@email.com>"]
+packages = [
+    { include = "code2md" },
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
 click = "^8.0"
 
-[tool.poetry.group.dev.dependencies]
-pytest = "^8.1.1"
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+
+[tool.poetry.scripts]
+code2md = "code2md.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
