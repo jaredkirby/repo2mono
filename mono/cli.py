@@ -15,7 +15,7 @@ from mono import create_markdown_file, generate_tree
     "--extensions",
     "-e",
     multiple=True,
-    default=[".py"],
+    default=[".py", ".toml", ".md"],
     help="File extensions to include (default: .py, .toml, .md)",
 )
 @click.option(
