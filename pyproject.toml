@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "code2md"
+name = "mono"
 version = "0.1.0"
 description = "Codebase to single Markdown string with file tree."
-authors = ["Your Name <your@email.com>"]
+authors = ["jaredkirby <jpeterkirby@gmail.com>"]
 packages = [
-    { include = "code2md" },
+    { include = "mono" },
 ]
 
 [tool.poetry.dependencies]
@@ -15,7 +15,7 @@ click = "^8.0"
 pytest = "^7.0"
 
 [tool.poetry.scripts]
-code2md = "code2md.cli:main"
+mono = "mono.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
