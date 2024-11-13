@@ -1,4 +1,4 @@
-# repo2mono/repo2mono.py
+# repo2mono/process.py
 import os
 import re
 
