@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "repo2mono"
-version = "0.1.0"
+version = "0.1.1"
 description = "Codebase to single Markdown string with file tree."
 authors = ["jaredkirby <jpeterkirby@gmail.com>"]
 packages = [
