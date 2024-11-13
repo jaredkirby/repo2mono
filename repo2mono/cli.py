@@ -1,6 +1,6 @@
 import os
 import click
-from repo2mono import create_markdown_file, generate_tree
+from process import create_markdown_file, generate_tree
 
 # repo2mono/cli.py
 
